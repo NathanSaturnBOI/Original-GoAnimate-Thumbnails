@@ -1,5 +1,4 @@
-# GoAnimate-Thumbnails
-This repository is a storage location for stock-theme thumbnails originally hosted on Vyond.  If you'd like to know about how I did it, I got the item IDs by running a quick Powershell script to perform regex-search on [the theme files](https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper/tree/master/_THEMES).  The original file URLs were obtained with the following PowerShell script:
-```ps
-Select-String -Path ../ga-w/themes/*.xml -Pattern 'https://s3.amazonaws\.com/fs\.goanimate\.com/files/.{1,90}\.(?:png|jpg)' -AllMatches | % {$_.Matches.Value}
-```
+# The Original GoAnimate Thumbnails
+This repository is a storage location for stock-theme thumbnails originated from the s3.amazonaws.com/fs.goanimate.com database site and from the original GoAnimate/Vyond site. Unfortunate the fact that the thumbnails and stuff from that site are no longer existent as of 2022, meaning at least few of the thumbnail ids were assumed at least the closest they can be. Thumbnails that weren't saved before were either found or recreated are being added onto the archive as time goes depending on the ids for each thumbnail.
+
+Credit goes to VisualPlugin for the original repository.
